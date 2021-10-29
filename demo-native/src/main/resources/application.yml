@@ -1,0 +1,6 @@
+demo:
+  message: Spring Boot to the cloud!
+
+spring:
+  application:
+    name: demo-native
