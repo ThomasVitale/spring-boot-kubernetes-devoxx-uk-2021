@@ -24,7 +24,7 @@ spec:
           livenessProbe:
             httpGet:
               path: /actuator/health/liveness
-            initialDelaySeconds: 20
+            initialDelaySeconds: 5
             periodSeconds: 5
           readinessProbe:
             httpGet:
@@ -37,4 +37,4 @@ spec:
       volumes:
         - name: config-volume
           configMap:
-            name: demo-service
+            name: demo-native
