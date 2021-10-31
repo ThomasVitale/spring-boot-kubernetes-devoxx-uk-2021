@@ -10,7 +10,8 @@ spec:
   template:
     spec:
       containers:
-        - image: thomasvitale/demo-native-devoxx:1.0
+        - name: demo-native
+          image: thomasvitale/demo-native-devoxx:1.0
           imagePullPolicy: Always
           ports:
             - containerPort: 8080
