@@ -1,5 +1,5 @@
 demo:
-  message: Spring Boot to the cloud!
+  message: Spring Boot on the cloud!
 
 spring:
   application:

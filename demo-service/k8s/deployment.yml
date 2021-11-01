@@ -26,10 +26,10 @@ spec:
             - containerPort: 8080
           resources:
             requests:
-              memory: "756Mi"
-              cpu: "0.2"
+              memory: "1Gi"
+              cpu: "0.5"
             limits:
-              memory: "756Mi"
+              memory: "1Gi"
           lifecycle:
             preStop:
               exec:
@@ -38,7 +38,7 @@ spec:
             httpGet:
               path: /actuator/health/liveness
               port: 8080
-            initialDelaySeconds: 20
+            initialDelaySeconds: 5
             periodSeconds: 5
           readinessProbe:
             httpGet:
